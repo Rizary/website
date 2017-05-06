@@ -12,7 +12,7 @@
 	branch = jsaddle
 [submodule "deps/frontend/dependent-sum-template"]
 	path = deps/frontend/dependent-sum-template
-	url = https://github.com/mokus0/dependent-sum-template.git
+	url = https://github.com/reflex-frp/dependent-sum-template.git
 [submodule "deps/backend/snap-loader-static"]
 	path = deps/backend/snap-loader-static
 	url = https://github.com/snapframework/snap-loader-static.git
@@ -22,9 +22,6 @@
 [submodule "deps/backend/websockets"]
 	path = deps/backend/websockets
 	url = https://github.com/jaspervdj/websockets.git
-[submodule "deps/backend/snap-loader-dynamic"]
-	path = deps/backend/snap-loader-dynamic
-	url = https://github.com/snapframework/snap-loader-dynamic.git
 [submodule "deps/backend/snap"]
 	path = deps/backend/snap
 	url = https://github.com/snapframework/snap.git
