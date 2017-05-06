@@ -1,0 +1,16 @@
+with-compiler: /usr/local/bin/ghc
+compiler: ghc
+
+flags: -overloaded-methods -overloaded-signals -overloaded-properties
+
+
+packages:
+  ./.
+  ../deps/backend/snap
+  ../deps/backend/snap-loader-dynamic
+  ../deps/backend/snap-loader-static
+  ../deps/backend/snaplet-postgresql-simple
+  ../deps/backend/websockets
+  ../deps/backend/websockets-snap
+
+  

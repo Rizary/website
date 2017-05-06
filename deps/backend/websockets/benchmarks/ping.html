@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping benchmark</title>
+        <script type="text/JavaScript"
+            src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+        <script type="text/JavaScript">
+            $(document).ready(function () {
+                var host = window.location.hostname;
+                if(host == '') host = 'localhost';
+                var uri = 'ws://' + host + ':8088';
+
+                /* Number of pings in the last second */
+                var pings = 0;
+
+                $('#stats').text('Opening WebSocket...');
+                Socket = "WebSocket" in window ? WebSocket : MozWebSocket;
+                var ws = new Socket(uri);
+                ws.onopen = function() {
+                    window.setInterval(function () {
+                        $('#stats').text(pings + ' ping/s');
+                        pings = 0;
+                    }, 1000);
+                };
+
+                ws.onmessage = function (event) {
+                    var msg = event.data;
+                    if(msg.substr(0, 5) == 'Ping ') {
+                        var n = parseInt(msg.substr(5));
+                        ws.send('Pong ' + n);
+                        pings++;
+                    }
+                };
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Ping benchmark</h1>
+        <div id="stats">
+        </div>
+    </body>
+</html>

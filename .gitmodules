@@ -1,0 +1,33 @@
+[submodule "deps/frontend/reflex-dom"]
+	path = deps/frontend/reflex-dom
+	url = https://github.com/reflex-frp/reflex-dom.git
+	branch = jsaddle
+[submodule "deps/frontend/reflex-dom-contrib"]
+	path = deps/frontend/reflex-dom-contrib
+	url = https://github.com/reflex-frp/reflex-dom-contrib.git
+	branch = jsaddle
+[submodule "deps/frontend/reflex"]
+	path = deps/frontend/reflex
+	url = https://github.com/reflex-frp/reflex.git
+	branch = jsaddle
+[submodule "deps/frontend/dependent-sum-template"]
+	path = deps/frontend/dependent-sum-template
+	url = https://github.com/mokus0/dependent-sum-template.git
+[submodule "deps/backend/snap-loader-static"]
+	path = deps/backend/snap-loader-static
+	url = https://github.com/snapframework/snap-loader-static.git
+[submodule "deps/backend/snaplet-postgresql-simple"]
+	path = deps/backend/snaplet-postgresql-simple
+	url = https://github.com/mightybyte/snaplet-postgresql-simple.git
+[submodule "deps/backend/websockets"]
+	path = deps/backend/websockets
+	url = https://github.com/jaspervdj/websockets.git
+[submodule "deps/backend/snap-loader-dynamic"]
+	path = deps/backend/snap-loader-dynamic
+	url = https://github.com/snapframework/snap-loader-dynamic.git
+[submodule "deps/backend/snap"]
+	path = deps/backend/snap
+	url = https://github.com/snapframework/snap.git
+[submodule "deps/backend/websockets-snap"]
+	path = deps/backend/websockets-snap
+	url = https://github.com/jaspervdj/websockets-snap.git
