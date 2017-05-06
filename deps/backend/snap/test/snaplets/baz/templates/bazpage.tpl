@@ -1,1 +1,0 @@
-baz template page <barsplice/>

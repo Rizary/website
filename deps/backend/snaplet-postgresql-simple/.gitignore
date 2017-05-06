@@ -1,5 +1,0 @@
-.DS_Store
-dist/
-*.swp
-.cabal-sandbox/
-cabal.sandbox.config

@@ -1,3 +1,0 @@
-packages: .
-
-optional-packages: example/*.cabal
